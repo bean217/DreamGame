@@ -11,7 +11,7 @@ namespace DreamGame.FontLoader
 {
     public static class FontLoader
     {
-        public static string RootDirectory = "FontLoader/";
+        public static string RootDirectory = $"{Game1.LOCAL_DIR}FontLoader/";
         public static SpriteFont LoadFont(string fileLocation, int fontSize, GraphicsDevice graphicsDevice)
         {
             return TtfFontBaker.Bake(File.ReadAllBytes(RootDirectory + fileLocation),

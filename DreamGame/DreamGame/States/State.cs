@@ -10,9 +10,9 @@ namespace DreamGame.States
 {
     public abstract class State
     {
-        protected GraphicsDeviceManager _graphics;
-        protected SpriteBatch _spriteBatch;
-        protected Game _game;
+        public GraphicsDeviceManager _graphics;
+        public SpriteBatch _spriteBatch;
+        public Game _game;
 
         public State(GraphicsDeviceManager graphics, SpriteBatch spriteBatch, Game game) {
             _graphics = graphics;

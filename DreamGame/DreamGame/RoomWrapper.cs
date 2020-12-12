@@ -4,6 +4,7 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using DreamGame.States;
 
 namespace DreamGame
 {
@@ -16,6 +17,8 @@ namespace DreamGame
 
         #endregion
 
+        public State state;
+
         private int levelNum;
 
         private Map map;
@@ -25,17 +28,27 @@ namespace DreamGame
             get; set;
         }
 
-        public RoomWrapper(int levelNum) {
+        public RoomWrapper(int levelNum, State state) {
             this.levelNum = levelNum;
             map = new Map(this);
+            this.state = state;
         }
 
         public void LoadContent() {
             // read room wrapper data file for dimension info
             // dimensions = .... ;
-            Dictionary<string, string> data = RWReader($"data{levelNum}");
+            Dictionary<string, string> data = RWReader($"{Game1.LOCAL_DIR}Rooms/Room{levelNum}/data.txt");
+            string testing = System.IO.Directory.GetCurrentDirectory();
             dimensions = new Vector2(int.Parse(data[DIM_X]), int.Parse(data[DIM_Y]));
             map.LoadContent();
+        }
+
+        public void Update(GameTime gameTime) {
+            map.Update(gameTime);
+        }
+
+        public void Draw(GameTime gameTime, SpriteBatch spriteBatch) {
+            map.Draw(gameTime, spriteBatch);
         }
 
         public static Dictionary<string, string> RWReader(string filename) {
@@ -47,6 +60,7 @@ namespace DreamGame
                 
                 while ((line = file.ReadLine()) != null) {
                     // '#' represents a comment within a file
+                    Console.WriteLine(line);
                     if (line.Length == 0 || (line.Length > 0 && line[0] == '#')) continue;
                     string[] info_tmp = line.Split('=');
                     

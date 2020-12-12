@@ -12,23 +12,23 @@ namespace DreamGame.States
         private RoomWrapper _rw;
 
         public GameState(GraphicsDeviceManager graphics, SpriteBatch spriteBatch, Game game, int levelNum) : base(graphics, spriteBatch, game) {
-            _rw = new RoomWrapper(levelNum);
+            _rw = new RoomWrapper(levelNum, this);
         }
 
         public override void LoadContent()
         {
-            //_rw.LoadContent();
+            _rw.LoadContent();
         }
 
         public override void Update(GameTime gameTime)
         {
-
+            _rw.Update(gameTime);
         }
 
         public override void Draw(GameTime gameTime)
         {
             _spriteBatch.Begin();
-            
+            _rw.Draw(gameTime, _spriteBatch);
             _spriteBatch.End();
         }
     }

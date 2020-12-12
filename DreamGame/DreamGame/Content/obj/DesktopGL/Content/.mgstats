@@ -1,2 +1,2 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/julia/source/repos/DreamGame/DreamGame/DreamGame/Content/coverart.png","C:/Users/julia/source/repos/DreamGame/DreamGame/DreamGame/Content/bin/DesktopGL/Content/ball.xnb","TextureProcessor","Texture2DContent",1594150,7840085,1.1064202
+"C:/Users/Benjamin Piro/Desktop/DreamGame/DreamGame/DreamGame/DreamGame/Content/Textures/tile1.png","C:/Users/Benjamin Piro/Desktop/DreamGame/DreamGame/DreamGame/DreamGame/Content/bin/DesktopGL/Content/Textures/tile1.xnb","TextureProcessor","Texture2DContent",827,4181,0.1673694

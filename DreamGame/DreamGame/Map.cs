@@ -10,9 +10,9 @@ namespace DreamGame
     class Map
     {
 
-        RoomWrapper _rw;
+        public RoomWrapper _rw;
 
-        Tile[,] tiles;
+        private Tile[,] tiles;
 
         public Map(RoomWrapper rw) {
             _rw = rw;
@@ -21,10 +21,14 @@ namespace DreamGame
         public void LoadContent() {
             // create tile array
             int i, j;
+
+            // load textures here
+
             tiles = new Tile[(int)_rw.dimensions.Y, (int)_rw.dimensions.X];
             for (j = 0; j < _rw.dimensions.Y; j++) {
                 for (i = 0; i < _rw.dimensions.X; i++) {
-                    tiles[j, i] = new Tile(i, j);
+                    tiles[j, i] = new Tile(i, j, this);
+                    tiles[j, i].LoadContent();
                 }
             }
         }
