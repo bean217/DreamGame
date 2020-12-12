@@ -1,14 +1,17 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using DreamGame.States;
 
-namespace monogame_test
+namespace DreamGame
 {
     public class Game1 : Game
     {
 
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
+
+        public State current;
 
         public Game1() {
             _graphics = new GraphicsDeviceManager(this);
@@ -18,36 +21,24 @@ namespace monogame_test
 
         protected override void Initialize() {
             // TODO: Add your initialization logic here
-
             base.Initialize();
         }
 
         protected override void LoadContent() {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            current = new GameState(_graphics, _spriteBatch, this);
+            current.LoadContent();
             // TODO: use this.Content to load your game content here
         }
 
         protected override void Update(GameTime gameTime) {
-            var kstate = Keyboard.GetState();
-
-            if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || kstate.IsKeyDown(Keys.Escape))
-                Exit();
-
-            // TODO: Add your update logic here
+            current.Update(gameTime);
 
             base.Update(gameTime);
         }
 
         protected override void Draw(GameTime gameTime) {
-            GraphicsDevice.Clear(Color.CornflowerBlue);
-
-            _spriteBatch.Begin();
-
-
-            _spriteBatch.End();
-
-            // TODO: Add your drawing code here
+            current.Draw(gameTime);
 
             base.Draw(gameTime);
         }

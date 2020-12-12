@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace monogame_test
+namespace DreamGame
 {
     public static class Program
     {
