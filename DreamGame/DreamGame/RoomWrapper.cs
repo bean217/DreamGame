@@ -8,7 +8,7 @@ using DreamGame.States;
 
 namespace DreamGame
 {
-    class RoomWrapper
+    public class RoomWrapper
     {
         #region Room data.txt sections
         
@@ -21,7 +21,7 @@ namespace DreamGame
 
         private int levelNum;
 
-        private Map map;
+        public Map map;
 
         public Vector2 dimensions
         {

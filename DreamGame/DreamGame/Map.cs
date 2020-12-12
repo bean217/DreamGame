@@ -15,6 +15,9 @@ namespace DreamGame
         // In pixels
         public Vector2 size;
 
+        // In pixels
+        public Vector2 offset;
+
         public Dictionary<string, Texture2D> gameObjectTextures; // HOLDS MAP RELATED TEXTURES, <NOT COMPLETE>
 
         private Tile[,] tiles;
@@ -34,6 +37,7 @@ namespace DreamGame
             // set the offset based on the dimensions of the map
             int startx = (Game1.WIN_WIDTH / 2) - ((Tile.TILE_SIZE * (int)_rw.dimensions.X) / 2);
             int starty = (Game1.WIN_HEIGHT / 2) - ((Tile.TILE_SIZE * (int)_rw.dimensions.Y) / 2);
+            offset = new Vector2(startx, starty);
 
             // load textures here
             tiles = new Tile[(int)_rw.dimensions.Y, (int)_rw.dimensions.X];
@@ -56,6 +60,10 @@ namespace DreamGame
                     tiles[j, i].Draw(gameTime, spriteBatch);
                 }
             }
+        }
+
+        public void LoadMapTextures() { 
+            
         }
     }
 }
