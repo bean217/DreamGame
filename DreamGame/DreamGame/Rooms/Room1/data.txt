@@ -2,3 +2,5 @@
 room_width=32
 # room height by number of tiles
 room_height=20
+# number of rooms
+room_num=2

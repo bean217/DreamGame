@@ -21,36 +21,15 @@ C:\Users\Benjamin Piro\Desktop\DreamGame\DreamGame\DreamGame\DreamGame\bin\Debug
 C:\Users\Benjamin Piro\Desktop\DreamGame\DreamGame\DreamGame\DreamGame\obj\Debug\netcoreapp3.1\DreamGame.dll
 C:\Users\Benjamin Piro\Desktop\DreamGame\DreamGame\DreamGame\DreamGame\obj\Debug\netcoreapp3.1\DreamGame.pdb
 C:\Users\Benjamin Piro\Desktop\DreamGame\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\SpriteFontPlus.dll
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\Content\ball.xnb
 C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\DreamGame.exe
 C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\DreamGame.deps.json
 C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\DreamGame.runtimeconfig.json
 C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\DreamGame.runtimeconfig.dev.json
 C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\DreamGame.dll
 C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\DreamGame.pdb
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\Microsoft.VisualBasic.dll
 C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\MonoGame.Framework.dll
 C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\SharpDX.dll
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\SharpDX.Direct2D1.dll
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\SharpDX.Direct3D11.dll
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\SharpDX.Direct3D9.dll
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\SharpDX.DXGI.dll
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\SharpDX.Mathematics.dll
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\SharpDX.MediaFoundation.dll
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\SharpDX.XAudio2.dll
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\SharpDX.XInput.dll
 C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\SpriteFontPlus.dll
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\debian-x64\native\libuv.so
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\fedora-x64\native\libuv.so
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\opensuse-x64\native\libuv.so
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\osx\native\libuv.dylib
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\rhel-x64\native\libuv.so
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\win7-arm\native\libuv.dll
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\win7-x64\native\libuv.dll
-C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\win7-x86\native\libuv.dll
 C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libSDL2-2.0.so.0
 C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libopenal.so.1
 C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\osx\native\libSDL2-2.0.0.dylib
@@ -107,3 +86,43 @@ C:\Users\Benjamin Piro\Desktop\DreamGame\DreamGame\DreamGame\DreamGame\bin\Debug
 C:\Users\Benjamin Piro\Desktop\DreamGame\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\libmojoshader_64.dll
 C:\Users\Benjamin Piro\Desktop\DreamGame\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\nvtt.dll
 C:\Users\Benjamin Piro\Desktop\DreamGame\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\Content\Textures\tile1.xnb
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\Content\Textures\tile1.xnb
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\AssimpNet.dll
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\ATI.TextureConverter.dll
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\CppNet.dll
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\MonoGame.Framework.Content.Pipeline.dll
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\Nvidia.TextureTools.dll
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\PVRTexLibNET.dll
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\SharpDX.D3DCompiler.dll
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\SharpFont.dll
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libassimp.so
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libassimp.dylib
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\assimp.dll
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\assimp.dll
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libPVRTexLibWrapper.so
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libfreeimage-3.17.0.so
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libfreetype.6.so
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libnvcore.so
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libnvimage.so
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libnvmath.so
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libnvtt.so
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libpng16.so.16
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\linux\ffmpeg
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\linux\ffprobe
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\osx\native\libPVRTexLibWrapper.dylib
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\osx\native\libfreeimage.dylib
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\osx\native\libfreetype.6.dylib
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\osx\native\libnvcore.dylib
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\osx\native\libnvimage.dylib
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\osx\native\libnvmath.dylib
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\osx\native\libnvtt.dylib
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\osx\native\libpng16.16.dylib
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\osx\native\osx\ffmpeg
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\osx\native\osx\ffprobe
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\FreeImage.dll
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\PVRTexLibWrapper.dll
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\ffmpeg.exe
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\ffprobe.exe
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\freetype6.dll
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\libmojoshader_64.dll
+C:\Users\julia\source\repos\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\nvtt.dll

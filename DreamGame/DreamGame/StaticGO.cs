@@ -8,7 +8,7 @@ namespace DreamGame
 {
     class StaticGO : GameObject
     {
-        public StaticGO(int width, int height, RoomWrapper rw) : base(width, height, rw) { 
+        public StaticGO(int width, int height, RoomWrapper rw, GameObjectType type, MoveType mType) : base(width, height, rw, type, mType) { 
             
         }
 

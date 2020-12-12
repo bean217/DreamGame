@@ -7,16 +7,37 @@ using Microsoft.Xna.Framework.Input;
 
 namespace DreamGame
 {
-    class DynamicGO : GameObject
+    public class DynamicGO : GameObject
     {
-        public DynamicGO(int width, int height, RoomWrapper rw) : base(width, height, rw)
+        public DynamicGO(int width, int height, RoomWrapper rw, GameObjectType type, MoveType mType) : base(width, height, rw, type, mType)
         {
 
         }
 
+        public bool checkCollision(int x, int y)
+        {
+            if (x < _rw.map.offset.X)
+            {
+                return true;
+            }
+            if (x + size.X > _rw.map.offset.X + _rw.map.size.X)
+            {
+                return true;
+            }
+            if (y < _rw.map.offset.Y)
+            {
+                return true;
+            }
+            if (y + size.Y > _rw.map.offset.Y + _rw.map.size.Y)
+            {
+                return true;
+            }
+            return false;
+        }
+
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            throw new NotImplementedException();
+            spriteBatch.Draw(_rw.map.gameObjectTextures[type], drawRect, Color.White);
         }
 
         public override void LoadContent()

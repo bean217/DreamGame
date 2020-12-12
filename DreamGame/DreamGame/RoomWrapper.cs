@@ -14,14 +14,20 @@ namespace DreamGame
         
         private static readonly string DIM_X = "room_width";
         private static readonly string DIM_Y = "room_height";
+        private static readonly string NUM_ROOMS = "room_num";
 
         #endregion
 
         public State state;
 
-        private int levelNum;
+        public int levelNum;
 
         public Map map;
+
+        public Player player;
+
+        private Room[] rooms;
+        private Room currentRoom;
 
         public Vector2 dimensions
         {
@@ -32,6 +38,7 @@ namespace DreamGame
             this.levelNum = levelNum;
             map = new Map(this);
             this.state = state;
+
         }
 
         public void LoadContent() {
@@ -41,14 +48,23 @@ namespace DreamGame
             string testing = System.IO.Directory.GetCurrentDirectory();
             dimensions = new Vector2(int.Parse(data[DIM_X]), int.Parse(data[DIM_Y]));
             map.LoadContent();
+
+            rooms = new Room[int.Parse(data[NUM_ROOMS])];
+            for (int i = 1; i <= rooms.Length; i++)
+            {
+                rooms[i-1] = new Room(i, this);
+                rooms[i-1].GOReader();
+            }
         }
 
         public void Update(GameTime gameTime) {
             map.Update(gameTime);
+            player.Update(gameTime);
         }
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch) {
             map.Draw(gameTime, spriteBatch);
+            player.Draw(gameTime, spriteBatch);
         }
 
         public static Dictionary<string, string> RWReader(string filename) {
@@ -71,6 +87,11 @@ namespace DreamGame
                     }
                     if (info_tmp[0].Equals(DIM_Y)) {
                         tmp.Add(DIM_Y, info_tmp[1]);
+                        continue;
+                    }
+                    if (info_tmp[0].Equals(NUM_ROOMS))
+                    {
+                        tmp.Add(NUM_ROOMS, info_tmp[1]);
                         continue;
                     }
                 }
