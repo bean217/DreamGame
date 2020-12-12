@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Benjamin Piro\\Desktop\\DreamGame\\DreamGame\\DreamGame\\DreamGame\\DreamGame.csproj": {}
+    "C:\\Users\\julia\\source\\repos\\DreamGame\\DreamGame\\DreamGame\\DreamGame.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Benjamin Piro\\Desktop\\DreamGame\\DreamGame\\DreamGame\\DreamGame\\DreamGame.csproj": {
+    "C:\\Users\\julia\\source\\repos\\DreamGame\\DreamGame\\DreamGame\\DreamGame.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Benjamin Piro\\Desktop\\DreamGame\\DreamGame\\DreamGame\\DreamGame\\DreamGame.csproj",
+        "projectUniqueName": "C:\\Users\\julia\\source\\repos\\DreamGame\\DreamGame\\DreamGame\\DreamGame.csproj",
         "projectName": "DreamGame",
-        "projectPath": "C:\\Users\\Benjamin Piro\\Desktop\\DreamGame\\DreamGame\\DreamGame\\DreamGame\\DreamGame.csproj",
-        "packagesPath": "C:\\Users\\Benjamin Piro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Benjamin Piro\\Desktop\\DreamGame\\DreamGame\\DreamGame\\DreamGame\\obj\\",
+        "projectPath": "C:\\Users\\julia\\source\\repos\\DreamGame\\DreamGame\\DreamGame\\DreamGame.csproj",
+        "packagesPath": "C:\\Users\\julia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\julia\\source\\repos\\DreamGame\\DreamGame\\DreamGame\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Benjamin Piro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\julia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -73,7 +73,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
