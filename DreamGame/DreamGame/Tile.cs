@@ -22,13 +22,12 @@ namespace DreamGame
         private Rectangle drawRect;
 
         public Tile(int x, int y, Map map) {
-            Position = new Vector2(x * TILE_SIZE, y * TILE_SIZE);
-            drawRect = new Rectangle(x * TILE_SIZE, y * TILE_SIZE, TILE_SIZE, TILE_SIZE);
+            Position = new Vector2(x, y);
+            drawRect = new Rectangle(x, y, TILE_SIZE, TILE_SIZE);
             this.map = map;}
 
         public void LoadContent() {
             // load texture here from content manager
-            Console.WriteLine(System.IO.Directory.GetCurrentDirectory());
             System.IO.Stream a_stream = new System.IO.FileStream($"{Game1.LOCAL_DIR}Assets/tile1.png", System.IO.FileMode.Open);
             texture = Texture2D.FromStream(map._rw.state._graphics.GraphicsDevice, a_stream);
             a_stream.Close();

@@ -11,6 +11,9 @@ namespace DreamGame
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 
+        public static readonly int WIN_WIDTH = 1280;
+        public static readonly int WIN_HEIGHT = 720;
+
         public State current;
 
         // testing
@@ -24,6 +27,9 @@ namespace DreamGame
 
         protected override void Initialize() {
             // TODO: Add your initialization logic here
+            _graphics.PreferredBackBufferWidth = WIN_WIDTH;
+            _graphics.PreferredBackBufferHeight = WIN_HEIGHT;
+            _graphics.ApplyChanges();
             base.Initialize();
         }
 
