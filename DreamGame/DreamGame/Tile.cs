@@ -10,8 +10,9 @@ namespace DreamGame
     class Tile
     {
         // Length/Width of a tile in pixels
-        private static readonly int TILE_SIZE = 32;
+        public static readonly int TILE_SIZE = 32;
 
+        // By tile number
         private Vector2 Position;
 
         private Texture2D texture;

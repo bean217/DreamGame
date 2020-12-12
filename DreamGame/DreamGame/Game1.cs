@@ -13,6 +13,9 @@ namespace DreamGame
 
         public State current;
 
+        // testing
+        public SpriteFont testfont;
+
         public Game1() {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
@@ -26,7 +29,8 @@ namespace DreamGame
 
         protected override void LoadContent() {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
-            current = new GameState(_graphics, _spriteBatch, this);
+
+            current = new GameState(_graphics, _spriteBatch, this, 1);
             current.LoadContent();
             // TODO: use this.Content to load your game content here
         }

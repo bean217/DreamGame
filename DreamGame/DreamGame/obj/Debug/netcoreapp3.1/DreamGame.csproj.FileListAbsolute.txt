@@ -40,3 +40,4 @@ C:\Users\Benjamin Piro\Desktop\DreamGame\DreamGame\DreamGame\DreamGame\bin\Debug
 C:\Users\Benjamin Piro\Desktop\DreamGame\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\DreamGame.pdb
 C:\Users\Benjamin Piro\Desktop\DreamGame\DreamGame\DreamGame\DreamGame\obj\Debug\netcoreapp3.1\DreamGame.dll
 C:\Users\Benjamin Piro\Desktop\DreamGame\DreamGame\DreamGame\DreamGame\obj\Debug\netcoreapp3.1\DreamGame.pdb
+C:\Users\Benjamin Piro\Desktop\DreamGame\DreamGame\DreamGame\DreamGame\bin\Debug\netcoreapp3.1\SpriteFontPlus.dll

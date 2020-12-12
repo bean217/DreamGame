@@ -1,0 +1,4 @@
+# room width by number of tiles
+room_width=40
+# room height by number of tiles
+room_height=30

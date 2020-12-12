@@ -16,11 +16,17 @@ namespace DreamGame
 
         public Map(RoomWrapper rw) {
             _rw = rw;
-            tiles = new Tile[(int)_rw.dimensions.X, (int)_rw.dimensions.Y];
         }
 
-        public void LoadContent() { 
-            
+        public void LoadContent() {
+            // create tile array
+            int i, j;
+            tiles = new Tile[(int)_rw.dimensions.Y, (int)_rw.dimensions.X];
+            for (j = 0; j < _rw.dimensions.Y; j++) {
+                for (i = 0; i < _rw.dimensions.X; i++) {
+                    tiles[j, i] = new Tile(i, j);
+                }
+            }
         }
 
         public void Update(GameTime gameTime) { 
