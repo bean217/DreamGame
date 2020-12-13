@@ -14,7 +14,7 @@ namespace DreamGame
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            throw new NotImplementedException();
+            spriteBatch.Draw(_rw.map.gameObjectTextures[type], drawRect, Color.White);
         }
 
         public override void LoadContent()

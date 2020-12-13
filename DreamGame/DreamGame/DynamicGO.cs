@@ -32,6 +32,11 @@ namespace DreamGame
             {
                 return true;
             }
+            if(_rw.currentRoom.collisionArray[(int)((x - _rw.map.offset.X) / Tile.TILE_SIZE), (int)((y - _rw.map.offset.Y) / Tile.TILE_SIZE)] == true)
+            {
+                return true;
+            }
+
             return false;
         }
 

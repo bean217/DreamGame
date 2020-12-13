@@ -13,7 +13,7 @@ namespace DreamGame
     {
         none,
         player,
-        walls,
+        wall,
         pushable,
         button,
         lava

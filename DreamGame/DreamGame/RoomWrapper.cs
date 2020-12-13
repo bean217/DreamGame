@@ -24,10 +24,9 @@ namespace DreamGame
 
         public Map map;
 
-        public Player player;
 
         private Room[] rooms;
-        private Room currentRoom;
+        public Room currentRoom;
 
         public Vector2 dimensions
         {
@@ -53,18 +52,19 @@ namespace DreamGame
             for (int i = 1; i <= rooms.Length; i++)
             {
                 rooms[i-1] = new Room(i, this);
-                rooms[i-1].GOReader();
             }
+            currentRoom = rooms[0];
+            currentRoom.LoadContent();
         }
 
         public void Update(GameTime gameTime) {
             map.Update(gameTime);
-            player.Update(gameTime);
+            currentRoom.Update(gameTime);
         }
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch) {
             map.Draw(gameTime, spriteBatch);
-            player.Draw(gameTime, spriteBatch);
+            currentRoom.Draw(gameTime, spriteBatch);
         }
 
         public static Dictionary<string, string> RWReader(string filename) {

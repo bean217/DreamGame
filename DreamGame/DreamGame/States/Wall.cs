@@ -5,18 +5,18 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-namespace DreamGame.States
+namespace DreamGame
 {
     internal class Wall : StaticGO
     {
         public Wall(int width, int height, RoomWrapper rw, GameObjectType type, MoveType mType) : base(width, height, rw, type, mType)
         {
-
+            Console.WriteLine("Wall!!!!!");
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            throw new NotImplementedException();
+            base.Draw(gameTime, spriteBatch);
         }
 
         public override void LoadContent()
