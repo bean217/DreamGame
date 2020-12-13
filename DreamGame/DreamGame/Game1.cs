@@ -48,6 +48,8 @@ namespace DreamGame
         }
 
         protected override void Draw(GameTime gameTime) {
+            GraphicsDevice.Clear(Color.White);
+            
             current.Draw(gameTime);
 
             base.Draw(gameTime);

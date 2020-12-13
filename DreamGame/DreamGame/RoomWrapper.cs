@@ -77,7 +77,12 @@ namespace DreamGame
             ZKeyState = kstate.IsKeyUp(Keys.Z);
             XKeyState = kstate.IsKeyUp(Keys.X);
 
-            Console.Write(currentRoom.roomNum);
+
+            //tmp game state change
+            if (kstate.IsKeyDown(Keys.Space))
+            {
+                state.ChangeState(new GameState(state._graphics, state._spriteBatch, state._game, 2), gameTime);
+            }
         }
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch) {

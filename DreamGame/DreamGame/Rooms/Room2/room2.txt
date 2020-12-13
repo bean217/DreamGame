@@ -1,0 +1,4 @@
+wall 4 9
+wall 12 9
+wall 11 6
+player 5 4
