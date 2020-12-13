@@ -9,7 +9,7 @@ namespace DreamGame
 {
     public class Room
     {
-        private int roomNum;
+        public int roomNum;
         private RoomWrapper rw;
 
         public Player player;

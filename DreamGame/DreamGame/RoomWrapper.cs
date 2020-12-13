@@ -49,17 +49,35 @@ namespace DreamGame
             map.LoadContent();
 
             rooms = new Room[int.Parse(data[NUM_ROOMS])];
-            for (int i = 1; i <= rooms.Length; i++)
+            for (int i = 0; i < rooms.Length; i++)
             {
-                rooms[i-1] = new Room(i, this);
+                rooms[i] = new Room(i, this);
             }
             currentRoom = rooms[0];
             currentRoom.LoadContent();
         }
 
+        bool ZKeyState = false;
+        bool XKeyState = false;
         public void Update(GameTime gameTime) {
             map.Update(gameTime);
             currentRoom.Update(gameTime);
+
+            var kstate = Keyboard.GetState();
+            if (kstate.IsKeyDown(Keys.Z) && ZKeyState)
+            {
+                if (currentRoom.roomNum + 1 < rooms.Length)
+                    currentRoom = rooms[currentRoom.roomNum + 1];
+            }
+            else if (kstate.IsKeyDown(Keys.X) && XKeyState)
+            {
+                if(currentRoom.roomNum - 1 >= 0)
+                    currentRoom = rooms[currentRoom.roomNum - 1];
+            }
+            ZKeyState = kstate.IsKeyUp(Keys.Z);
+            XKeyState = kstate.IsKeyUp(Keys.X);
+
+            Console.Write(currentRoom.roomNum);
         }
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch) {
