@@ -21,6 +21,7 @@ namespace DreamGame
 
     public enum MoveType
     {
+        none,
         immovable,
         moveable,
         controllable
@@ -34,7 +35,7 @@ namespace DreamGame
         protected Rectangle drawRect;
 
         protected GameObjectType type;
-        protected MoveType mType;
+        public MoveType mType;
 
         protected Vector2 size;
 

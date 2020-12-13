@@ -4,7 +4,7 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/Benjamin Piro/Desktop/DreamGame/DreamGame/DreamGame/DreamGame/Content/Textures/tile1.png</File>
+    <File>C:/Users/julia/source/repos/DreamGame/DreamGame/DreamGame/Content/Textures/tile1.png</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

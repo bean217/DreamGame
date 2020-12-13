@@ -7,6 +7,13 @@ using Microsoft.Xna.Framework.Input;
 
 namespace DreamGame
 {
+    public enum ColType
+    {
+        none,
+        boundary,
+        gameobject
+    }
+
     public class DynamicGO : GameObject
     {
         public DynamicGO(int width, int height, RoomWrapper rw, GameObjectType type, MoveType mType) : base(width, height, rw, type, mType)
@@ -14,30 +21,31 @@ namespace DreamGame
 
         }
 
-        public bool checkCollision(int x, int y)
+        public ColType checkCollision(int x, int y)
         {
             if (x < _rw.map.offset.X)
             {
-                return true;
+                return ColType.boundary;
             }
             if (x + size.X > _rw.map.offset.X + _rw.map.size.X)
             {
-                return true;
+                return ColType.boundary;
             }
             if (y < _rw.map.offset.Y)
             {
-                return true;
+                return ColType.boundary;
             }
             if (y + size.Y > _rw.map.offset.Y + _rw.map.size.Y)
             {
-                return true;
-            }
-            if(_rw.currentRoom.collisionArray[(int)((x - _rw.map.offset.X) / Tile.TILE_SIZE), (int)((y - _rw.map.offset.Y) / Tile.TILE_SIZE)] == true)
-            {
-                return true;
+                return ColType.boundary;
             }
 
-            return false;
+            if(_rw.currentRoom.collisionArray[(int)((x - _rw.map.offset.X) / Tile.TILE_SIZE), (int)((y - _rw.map.offset.Y) / Tile.TILE_SIZE)] != null)
+            {
+                return ColType.gameobject;
+            }
+
+            return ColType.none;
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)

@@ -34,7 +34,7 @@ namespace DreamGame
 
             bool moved = false;
 
-            Vector2 moveVec = new Vector2(Position.X, Position.Y);
+            Vector2 moveVec = new Vector2(0,0);
 
             var kstate = Keyboard.GetState();
             if (kstate.IsKeyDown(Keys.Up))
@@ -42,17 +42,17 @@ namespace DreamGame
                 moveVec.Y -= Tile.TILE_SIZE;
                 moved = true;
             }
-            if (kstate.IsKeyDown(Keys.Down))
+            else if (kstate.IsKeyDown(Keys.Down))
             {
                 moveVec.Y += Tile.TILE_SIZE;
                 moved = true;
             }
-            if (kstate.IsKeyDown(Keys.Right))
+            else if (kstate.IsKeyDown(Keys.Right))
             {
                 moveVec.X += Tile.TILE_SIZE;
                 moved = true;
             }
-            if (kstate.IsKeyDown(Keys.Left))
+            else if (kstate.IsKeyDown(Keys.Left))
             {
                 moveVec.X -= Tile.TILE_SIZE;
                 moved = true;
@@ -60,9 +60,31 @@ namespace DreamGame
 
             if (moved)
             {
-                if (!checkCollision((int)moveVec.X, (int)moveVec.Y))
+                ColType col = checkCollision((int)(moveVec.X + Position.X), (int)(moveVec.Y + Position.Y));
+                if (col == ColType.gameobject)
                 {
-                    Position = moveVec;
+
+                    GameObject colObj = _rw.currentRoom.collisionArray[(int)(((moveVec.X + Position.X) - _rw.map.offset.X) / Tile.TILE_SIZE), (int)(((moveVec.Y + Position.Y) - _rw.map.offset.Y) / Tile.TILE_SIZE)];
+
+                    if (colObj != null)
+                    {
+                        if (colObj.mType == MoveType.moveable)
+                        {
+                            if (((Pushable)colObj).move((int)moveVec.X, (int)moveVec.Y))
+                            {
+                                Position.X += moveVec.X;
+                                Position.Y += moveVec.Y;
+                                setDrawRect();
+                                lastTimePressed = (float)gameTime.TotalGameTime.TotalMilliseconds;
+                            }
+                        }
+                    }
+
+                }
+                else if (col == ColType.none)
+                {
+                    Position.X += moveVec.X;
+                    Position.Y += moveVec.Y;
                     setDrawRect();
                     lastTimePressed = (float)gameTime.TotalGameTime.TotalMilliseconds;
                 }

@@ -14,7 +14,7 @@ namespace DreamGame
 
         public Player player;
         private List<GameObject> gameobjects;
-        public bool[,] collisionArray;
+        public GameObject[,] collisionArray;
 
         public Room(int roomNum, RoomWrapper rw)
         {
@@ -23,12 +23,12 @@ namespace DreamGame
             gameobjects = new List<GameObject>();
             int xSize = (int)(rw.map.size.X / Tile.TILE_SIZE);
             int ySize = (int)(rw.map.size.Y / Tile.TILE_SIZE);
-            collisionArray = new bool[xSize,ySize];
+            collisionArray = new GameObject[xSize,ySize];
             for(int x = 0; x < xSize; x++)
             {
                 for(int y = 0; y < ySize; y++)
                 {
-                    collisionArray[x, y] = false;
+                    collisionArray[x, y] = null;
                 }
             }
 
@@ -83,7 +83,16 @@ namespace DreamGame
                         int xPos = int.Parse(info_tmp[1]);
                         int yPos = int.Parse(info_tmp[2]);
                         tmpWall.initRect(xPos * Tile.TILE_SIZE + (int)rw.map.offset.X, yPos * Tile.TILE_SIZE + (int)rw.map.offset.Y);
-                        collisionArray[xPos, yPos] = true;
+                        collisionArray[xPos, yPos] = tmpWall;
+                    }
+                    else if (info_tmp[0].Equals(GameObjectType.pushable.ToString()))
+                    {
+                        Pushable tmpPushable = new Pushable(Tile.TILE_SIZE, Tile.TILE_SIZE, rw, GameObjectType.pushable, MoveType.moveable);
+                        gameobjects.Add(tmpPushable);
+                        int xPos = int.Parse(info_tmp[1]);
+                        int yPos = int.Parse(info_tmp[2]);
+                        tmpPushable.initRect(xPos * Tile.TILE_SIZE + (int)rw.map.offset.X, yPos * Tile.TILE_SIZE + (int)rw.map.offset.Y);
+                        collisionArray[xPos, yPos] = tmpPushable;
                     }
                 }
             }
