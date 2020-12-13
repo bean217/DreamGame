@@ -36,7 +36,7 @@ namespace DreamGame
         protected override void LoadContent() {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            current = new GameState(_graphics, _spriteBatch, this, 1);
+            current = new MenuState(_graphics, _spriteBatch, this, "Main");//new GameState(_graphics, _spriteBatch, this, 1);
             current.LoadContent();
             // TODO: use this.Content to load your game content here
         }
@@ -48,7 +48,7 @@ namespace DreamGame
         }
 
         protected override void Draw(GameTime gameTime) {
-            GraphicsDevice.Clear(Color.White);
+            GraphicsDevice.Clear(Color.Black);
             
             current.Draw(gameTime);
 

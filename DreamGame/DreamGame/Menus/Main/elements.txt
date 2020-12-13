@@ -1,0 +1,4 @@
+# text holds its font size
+text=Dream-Ception,36
+# button holds its name and a gamestate action (-1 to exit, >= 0 for gamestate)
+button=Play,1

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/julia/source/repos/DreamGame/DreamGame/DreamGame/Content/Textures/tile1.png</SourceFile>
-  <SourceTime>2020-12-12T14:41:01.0508245-05:00</SourceTime>
-  <DestFile>C:/Users/julia/source/repos/DreamGame/DreamGame/DreamGame/Content/bin/DesktopGL/Content/Textures/tile1.xnb</DestFile>
-  <DestTime>2020-12-12T16:14:19.7691068-05:00</DestTime>
+  <SourceFile>C:/Users/Benjamin Piro/Desktop/DreamGame/DreamGame/DreamGame/DreamGame/Content/Textures/tile1.png</SourceFile>
+  <SourceTime>2020-12-13T09:58:50.6908085-05:00</SourceTime>
+  <DestFile>C:/Users/Benjamin Piro/Desktop/DreamGame/DreamGame/DreamGame/DreamGame/Content/bin/DesktopGL/Content/Textures/tile1.xnb</DestFile>
+  <DestTime>2020-12-13T09:59:16.8953106-05:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2020-08-10T16:17:54-04:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
