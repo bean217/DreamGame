@@ -103,9 +103,11 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)monogame.content.builder.task\3.8.0.1641\build\MonoGame.Content.Builder.Task.props" Condition="Exists('$(NuGetPackageRoot)monogame.content.builder.task\3.8.0.1641\build\MonoGame.Content.Builder.Task.props')" />
+    <Import Project="$(NuGetPackageRoot)ilmerge\3.0.41\build\ILMerge.props" Condition="Exists('$(NuGetPackageRoot)ilmerge\3.0.41\build\ILMerge.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\julia\.nuget\packages\microsoft.codeanalysis.analyzers\1.1.0</PkgMicrosoft_CodeAnalysis_Analyzers>
     <PkgMonoGame_Content_Builder_Task Condition=" '$(PkgMonoGame_Content_Builder_Task)' == '' ">C:\Users\julia\.nuget\packages\monogame.content.builder.task\3.8.0.1641</PkgMonoGame_Content_Builder_Task>
+    <PkgILMerge Condition=" '$(PkgILMerge)' == '' ">C:\Users\julia\.nuget\packages\ilmerge\3.0.41</PkgILMerge>
   </PropertyGroup>
 </Project>

@@ -1,7 +1,5 @@
-wall 2 3
-wall 11 3
-wall 12 4
-wall 13 5
-wall 14 6
-wall 13 7
-player 10 5
+wall 9 1
+wall 9 3
+wall 8 2
+pushable 7 2
+player 2 2

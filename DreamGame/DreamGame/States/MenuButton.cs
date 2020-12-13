@@ -49,7 +49,7 @@ namespace DreamGame.States
             MouseState mouseState = Mouse.GetState();
             if (current == textures["Press"]) {
                 if (action < 0) { state._game.Exit(); }
-                else { state.ChangeState(new GameState(state._graphics, state._spriteBatch, state._game, action), gameTime); }
+                else { state.ChangeState(new GameState(state._graphics, state._spriteBatch, state._game, action)); }
             }
 
             if (mouseState.X > position.X && mouseState.X < position.X + PX_WIDTH && mouseState.Y > position.Y && mouseState.Y < position.Y + PX_HEIGHT) {

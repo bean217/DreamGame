@@ -1,6 +1,6 @@
 # room width by number of tiles
-room_width=16
+room_width=10
 # room height by number of tiles
-room_height=10
+room_height=5
 # number of rooms
-room_num=3
+room_num=2

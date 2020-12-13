@@ -31,18 +31,22 @@ namespace DreamGame
     public abstract class GameObject
     {
         protected RoomWrapper _rw;
-        protected Vector2 Position;
+        public Vector2 Position;
         protected Rectangle drawRect;
 
-        protected GameObjectType type;
+        public GameObjectType type;
         public MoveType mType;
 
         protected Vector2 size;
 
-        public GameObject(int width, int height, RoomWrapper rw, GameObjectType type, MoveType mType) {
+        public bool inDream = false;
+        public int homeRoom;
+
+        public GameObject(int width, int height, RoomWrapper rw, GameObjectType type, MoveType mType, int homeRoom) {
             _rw = rw;
             this.type = type;
             this.mType = mType;
+            this.homeRoom = homeRoom;
             size = new Vector2(width, height);
         }
 

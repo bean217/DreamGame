@@ -62,7 +62,6 @@ namespace DreamGame.States
                 while ((line = file.ReadLine()) != null)
                 {
                     // '#' represents a comment within a file
-                    Console.WriteLine(line);
                     if (line.Length == 0 || (line.Length > 0 && line[0] == '#')) continue;
                     string[] info_tmp = line.Split('=');
 

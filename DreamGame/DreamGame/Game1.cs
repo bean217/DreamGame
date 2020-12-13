@@ -7,7 +7,7 @@ namespace DreamGame
 {
     public class Game1 : Game
     {
-        public static readonly string LOCAL_DIR = "../../../";
+        public static readonly string LOCAL_DIR = System.IO.Directory.GetCurrentDirectory() + "/";
         private GraphicsDeviceManager _graphics;
         private SpriteBatch _spriteBatch;
 

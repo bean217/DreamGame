@@ -16,7 +16,7 @@ namespace DreamGame
 
     public class DynamicGO : GameObject
     {
-        public DynamicGO(int width, int height, RoomWrapper rw, GameObjectType type, MoveType mType) : base(width, height, rw, type, mType)
+        public DynamicGO(int width, int height, RoomWrapper rw, GameObjectType type, MoveType mType, int homeRoom) : base(width, height, rw, type, mType, homeRoom)
         {
 
         }
@@ -50,7 +50,11 @@ namespace DreamGame
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(_rw.map.gameObjectTextures[type], drawRect, Color.White);
+            inDream = _rw.currentRoom.roomNum > homeRoom;
+            Color color = Color.White;
+            if (inDream)
+                color = new Color(255, 255, 255, 100);
+            spriteBatch.Draw(_rw.map.gameObjectTextures[type], drawRect, color);
         }
 
         public override void LoadContent()
@@ -60,7 +64,6 @@ namespace DreamGame
 
         public override void Update(GameTime gameTime)
         {
-            throw new NotImplementedException();
         }
     }
 }

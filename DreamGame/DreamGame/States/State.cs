@@ -24,7 +24,7 @@ namespace DreamGame.States
         public abstract void Update(GameTime gameTime);
         public abstract void Draw(GameTime gameTime);
 
-        public void ChangeState(State newState, GameTime gameTime) {
+        public void ChangeState(State newState) {
             ((Game1)_game).current = newState;
             newState.LoadContent();
         }

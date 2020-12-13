@@ -1,0 +1,2 @@
+# button holds its name and a gamestate action (-1 to exit, >= 0 for gamestate)
+button=Quit,-1

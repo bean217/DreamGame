@@ -59,6 +59,7 @@ namespace DreamGame
 
         bool ZKeyState = false;
         bool XKeyState = false;
+        bool RKeyState = false;
         public void Update(GameTime gameTime) {
             map.Update(gameTime);
             currentRoom.Update(gameTime);
@@ -66,23 +67,28 @@ namespace DreamGame
             var kstate = Keyboard.GetState();
             if (kstate.IsKeyDown(Keys.Z) && ZKeyState)
             {
-                if (currentRoom.roomNum + 1 < rooms.Length)
-                    currentRoom = rooms[currentRoom.roomNum + 1];
+                if (currentRoom.roomNum - 1 >= 0)
+                    currentRoom = rooms[currentRoom.roomNum - 1];
+                currentRoom.checkPushableCols();
             }
             else if (kstate.IsKeyDown(Keys.X) && XKeyState)
             {
-                if(currentRoom.roomNum - 1 >= 0)
-                    currentRoom = rooms[currentRoom.roomNum - 1];
+                List<GameObject> tmpGOs = currentRoom.gameobjects;
+
+                if (currentRoom.roomNum + 1 < rooms.Length) {
+                    currentRoom = rooms[currentRoom.roomNum + 1];
+                    currentRoom.checkPushableCols();
+                    currentRoom.copyGOs(tmpGOs);
+                }
+            }
+            else if (kstate.IsKeyDown(Keys.R) && RKeyState)
+            {
+                state.ChangeState(new GameState(state._graphics, state._spriteBatch, state._game, levelNum));
             }
             ZKeyState = kstate.IsKeyUp(Keys.Z);
             XKeyState = kstate.IsKeyUp(Keys.X);
+            RKeyState = kstate.IsKeyUp(Keys.R);
 
-
-            //tmp game state change
-            if (kstate.IsKeyDown(Keys.Space))
-            {
-                state.ChangeState(new GameState(state._graphics, state._spriteBatch, state._game, 2), gameTime);
-            }
         }
 
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch) {
@@ -99,7 +105,6 @@ namespace DreamGame
                 
                 while ((line = file.ReadLine()) != null) {
                     // '#' represents a comment within a file
-                    Console.WriteLine(line);
                     if (line.Length == 0 || (line.Length > 0 && line[0] == '#')) continue;
                     string[] info_tmp = line.Split('=');
                     

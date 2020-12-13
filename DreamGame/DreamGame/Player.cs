@@ -9,7 +9,7 @@ namespace DreamGame
 {
     public class Player : DynamicGO
     {
-        public Player(int width, int height, RoomWrapper rw, GameObjectType type, MoveType mType) : base(width, height, rw, type, mType) { 
+        public Player(int width, int height, RoomWrapper rw, GameObjectType type, MoveType mType, int homeRoom) : base(width, height, rw, type, mType, homeRoom) { 
             
         }
 

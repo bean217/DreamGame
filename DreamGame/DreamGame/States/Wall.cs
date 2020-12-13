@@ -9,9 +9,8 @@ namespace DreamGame
 {
     internal class Wall : StaticGO
     {
-        public Wall(int width, int height, RoomWrapper rw, GameObjectType type, MoveType mType) : base(width, height, rw, type, mType)
+        public Wall(int width, int height, RoomWrapper rw, GameObjectType type, MoveType mType, int homeRoom) : base(width, height, rw, type, mType, homeRoom)
         {
-            Console.WriteLine("Wall!!!!!");
         }
 
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
